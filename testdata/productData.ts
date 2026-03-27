@@ -1,5 +1,5 @@
-import { ProductPayLoad } from "../types/product";
-import { faker } from "@faker-js/faker";
+import { ProductPayLoad } from '../types/product';
+import { faker } from '@faker-js/faker';
 
 export const createProductData = (): ProductPayLoad => {
   // Valid category IDs in Platzi Fake Store API are usually 1–5
@@ -11,6 +11,6 @@ export const createProductData = (): ProductPayLoad => {
     price: faker.number.int({ min: 10, max: 100 }),
     description: faker.commerce.productDescription(),
     categoryId, // ✅ use the random valid categoryId
-    images: [faker.image.url()]
+    images: [`https://picsum.photos/640/480?r=${faker.number.int(1000)}`],
   };
 };
