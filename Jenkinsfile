@@ -1,6 +1,13 @@
 pipeline {
     agent any
 
+    // This replaces the .env file that we removed from GitHub
+    environment {
+        API_URL = 'https://api.escuelajs.co'
+        API_EMAIL = 'john@mail.com'
+        API_PASSWORD = 'changeme'
+    }
+
     tools {
         nodejs "NodeJS_18" 
     }
