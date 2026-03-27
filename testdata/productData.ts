@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 
 export const createProductData = (): ProductPayLoad => {
   // Valid category IDs in Platzi Fake Store API are usually 1–5
-  const validCategoryIds = [1, 2, 3, 4, 5];
+  const validCategoryIds = [1, 2, 3, 4, 5, 6];
   const categoryId = faker.helpers.arrayElement(validCategoryIds);
 
   return {
