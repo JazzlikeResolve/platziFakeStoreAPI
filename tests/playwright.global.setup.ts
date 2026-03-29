@@ -1,5 +1,4 @@
 import { test as setup, expect } from '@playwright/test';
-import { request } from 'node:http';
 import { StoreController } from '../controllers/StoreController';
 import { AuthResponse } from '../types/product';
 
